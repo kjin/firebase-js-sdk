@@ -1,14 +1,12 @@
 goog.addDependency(
   '../../../../src/actioncodeinfo.js',
   ['fireauth.ActionCodeInfo'],
-  ['fireauth.MultiFactorInfo', 'fireauth.object'],
-  {}
+  ['fireauth.MultiFactorInfo', 'fireauth.object']
 );
 goog.addDependency(
   '../../../../src/actioncodesettings.js',
   ['fireauth.ActionCodeSettings'],
-  ['fireauth.AuthError', 'fireauth.authenum.Error'],
-  {}
+  ['fireauth.AuthError', 'fireauth.authenum.Error']
 );
 goog.addDependency(
   '../../../../src/actioncodeurl.js',
@@ -19,8 +17,7 @@ goog.addDependency(
     'fireauth.authenum.Error',
     'fireauth.object',
     'goog.Uri'
-  ],
-  {}
+  ]
 );
 goog.addDependency(
   '../../../../src/additionaluserinfo.js',
@@ -33,8 +30,7 @@ goog.addDependency(
     'fireauth.GoogleAdditionalUserInfo',
     'fireauth.TwitterAdditionalUserInfo'
   ],
-  ['fireauth.IdToken', 'fireauth.idp', 'fireauth.object', 'fireauth.util'],
-  {}
+  ['fireauth.IdToken', 'fireauth.idp', 'fireauth.object', 'fireauth.util']
 );
 goog.addDependency(
   '../../../../src/args.js',
@@ -46,7 +42,7 @@ goog.addDependency(
     'fireauth.MultiFactorSession',
     'fireauth.authenum.Error'
   ],
-  {}
+  { 'lang': 'es6' }
 );
 goog.addDependency(
   '../../../../src/auth.js',
@@ -84,7 +80,7 @@ goog.addDependency(
     'goog.events.EventTarget',
     'goog.object'
   ],
-  {}
+  { 'lang': 'es6' }
 );
 goog.addDependency(
   '../../../../src/authcredential.js',
@@ -125,14 +121,12 @@ goog.addDependency(
     'goog.Uri',
     'goog.array',
     'goog.object'
-  ],
-  {}
+  ]
 );
 goog.addDependency(
   '../../../../src/authevent.js',
   ['fireauth.AuthEvent'],
-  ['fireauth.AuthError', 'fireauth.authenum.Error'],
-  {}
+  ['fireauth.AuthError', 'fireauth.authenum.Error']
 );
 goog.addDependency(
   '../../../../src/autheventmanager.js',
@@ -156,14 +150,12 @@ goog.addDependency(
     'goog.Promise',
     'goog.Timer',
     'goog.array'
-  ],
-  {}
+  ]
 );
 goog.addDependency(
   '../../../../src/authsettings.js',
   ['fireauth.AuthSettings'],
-  [],
-  {}
+  []
 );
 goog.addDependency(
   '../../../../src/authstorage.js',
@@ -184,8 +176,7 @@ goog.addDependency(
     'goog.array',
     'goog.events',
     'goog.object'
-  ],
-  {}
+  ]
 );
 goog.addDependency(
   '../../../../src/authuser.js',
@@ -230,19 +221,17 @@ goog.addDependency(
     'goog.events.EventTarget',
     'goog.object'
   ],
-  {}
+  { 'lang': 'es6' }
 );
 goog.addDependency(
   '../../../../src/cacherequest.js',
   ['fireauth.CacheRequest'],
-  ['goog.Promise'],
-  {}
+  ['goog.Promise']
 );
 goog.addDependency(
   '../../../../src/confirmationresult.js',
   ['fireauth.ConfirmationResult'],
-  ['fireauth.PhoneAuthProvider', 'fireauth.object', 'goog.Promise'],
-  {}
+  ['fireauth.PhoneAuthProvider', 'fireauth.object', 'goog.Promise']
 );
 goog.addDependency(
   '../../../../src/cordovahandler.js',
@@ -266,20 +255,17 @@ goog.addDependency(
     'goog.array',
     'goog.crypt',
     'goog.crypt.Sha256'
-  ],
-  {}
+  ]
 );
 goog.addDependency(
   '../../../../src/defines.js',
   ['fireauth.constants', 'fireauth.constants.AuthEventType'],
-  [],
-  {}
+  []
 );
 goog.addDependency(
   '../../../../src/deprecation.js',
   ['fireauth.deprecation', 'fireauth.deprecation.Deprecations'],
-  ['fireauth.util'],
-  {}
+  ['fireauth.util']
 );
 goog.addDependency(
   '../../../../src/dynamiclink.js',
@@ -290,20 +276,17 @@ goog.addDependency(
     'fireauth.object',
     'fireauth.util',
     'goog.Uri'
-  ],
-  {}
+  ]
 );
 goog.addDependency(
   '../../../../src/error_auth.js',
   ['fireauth.AuthError', 'fireauth.authenum', 'fireauth.authenum.Error'],
-  [],
-  {}
+  []
 );
 goog.addDependency(
   '../../../../src/error_invalidorigin.js',
   ['fireauth.InvalidOriginError'],
-  ['fireauth.AuthError', 'fireauth.authenum.Error', 'goog.Uri', 'goog.string'],
-  {}
+  ['fireauth.AuthError', 'fireauth.authenum.Error', 'goog.Uri', 'goog.string']
 );
 goog.addDependency(
   '../../../../src/error_withcredential.js',
@@ -313,8 +296,7 @@ goog.addDependency(
     'fireauth.AuthProvider',
     'fireauth.object',
     'goog.object'
-  ],
-  {}
+  ]
 );
 goog.addDependency(
   '../../../../src/exports_auth.js',
@@ -355,19 +337,17 @@ goog.addDependency(
     'fireauth.idp.ProviderId',
     'goog.Promise'
   ],
-  {}
+  { 'lang': 'es6' }
 );
 goog.addDependency(
   '../../../../src/exports_lib.js',
   ['fireauth.exportlib', 'fireauth.exportlib.ExportedMethod'],
-  ['fireauth.args'],
-  {}
+  ['fireauth.args']
 );
 goog.addDependency(
   '../../../../src/exports_unreleased.js',
   ['fireauth.exportsUnreleased'],
-  [],
-  {}
+  []
 );
 goog.addDependency(
   '../../../../src/idp.js',
@@ -379,13 +359,13 @@ goog.addDependency(
     'fireauth.idp.SignInMethod'
   ],
   ['fireauth.constants'],
-  {}
+  { 'lang': 'es5' }
 );
 goog.addDependency(
   '../../../../src/idtoken.js',
   ['fireauth.IdToken'],
   ['goog.crypt', 'goog.crypt.base64'],
-  {}
+  { 'lang': 'es6' }
 );
 goog.addDependency(
   '../../../../src/idtokenresult.js',
@@ -396,8 +376,7 @@ goog.addDependency(
     'fireauth.authenum.Error',
     'fireauth.object',
     'fireauth.util'
-  ],
-  {}
+  ]
 );
 goog.addDependency(
   '../../../../src/iframeclient/ifchandler.js',
@@ -423,7 +402,7 @@ goog.addDependency(
     'goog.array',
     'goog.object'
   ],
-  {}
+  { 'lang': 'es6' }
 );
 goog.addDependency(
   '../../../../src/iframeclient/iframewrapper.js',
@@ -434,8 +413,7 @@ goog.addDependency(
     'goog.html.TrustedResourceUrl',
     'goog.net.jsloader',
     'goog.string.Const'
-  ],
-  {}
+  ]
 );
 goog.addDependency(
   '../../../../src/messagechannel/defines.js',
@@ -445,8 +423,7 @@ goog.addDependency(
     'fireauth.messagechannel.TimeoutDuration',
     'fireauth.messagechannel.utils'
   ],
-  [],
-  {}
+  []
 );
 goog.addDependency(
   '../../../../src/messagechannel/postmessager.js',
@@ -455,8 +432,7 @@ goog.addDependency(
     'fireauth.messagechannel.WindowPostMessager',
     'fireauth.messagechannel.WorkerClientPostMessager'
   ],
-  [],
-  {}
+  []
 );
 goog.addDependency(
   '../../../../src/messagechannel/receiver.js',
@@ -466,8 +442,7 @@ goog.addDependency(
     'goog.Promise',
     'goog.array',
     'goog.object'
-  ],
-  {}
+  ]
 );
 goog.addDependency(
   '../../../../src/messagechannel/sender.js',
@@ -480,8 +455,7 @@ goog.addDependency(
     'fireauth.messagechannel.utils',
     'goog.Promise',
     'goog.array'
-  ],
-  {}
+  ]
 );
 goog.addDependency(
   '../../../../src/multifactorassertion.js',
@@ -498,7 +472,7 @@ goog.addDependency(
     'fireauth.authenum.Error',
     'fireauth.object'
   ],
-  {}
+  { 'lang': 'es5' }
 );
 goog.addDependency(
   '../../../../src/multifactorauthcredential.js',
@@ -507,8 +481,7 @@ goog.addDependency(
     'fireauth.MultiFactorEnrollmentRequestIdentifier',
     'fireauth.MultiFactorSignInRequestIdentifier'
   ],
-  [],
-  {}
+  []
 );
 goog.addDependency(
   '../../../../src/multifactorerror.js',
@@ -519,8 +492,7 @@ goog.addDependency(
     'fireauth.authenum.Error',
     'fireauth.object',
     'goog.object'
-  ],
-  {}
+  ]
 );
 goog.addDependency(
   '../../../../src/multifactorgenerator.js',
@@ -529,8 +501,7 @@ goog.addDependency(
     'fireauth.PhoneMultiFactorAssertion',
     'fireauth.constants',
     'fireauth.object'
-  ],
-  {}
+  ]
 );
 goog.addDependency(
   '../../../../src/multifactorinfo.js',
@@ -540,8 +511,7 @@ goog.addDependency(
     'fireauth.authenum.Error',
     'fireauth.constants',
     'fireauth.object'
-  ],
-  {}
+  ]
 );
 goog.addDependency(
   '../../../../src/multifactorresolver.js',
@@ -554,14 +524,12 @@ goog.addDependency(
     'fireauth.object',
     'goog.array',
     'goog.object'
-  ],
-  {}
+  ]
 );
 goog.addDependency(
   '../../../../src/multifactorsession.js',
   ['fireauth.MultiFactorSession'],
-  ['fireauth.AuthError', 'fireauth.authenum.Error', 'goog.Promise'],
-  {}
+  ['fireauth.AuthError', 'fireauth.authenum.Error', 'goog.Promise']
 );
 goog.addDependency(
   '../../../../src/multifactoruser.js',
@@ -574,38 +542,32 @@ goog.addDependency(
     'fireauth.object',
     'goog.array',
     'goog.events'
-  ],
-  {}
+  ]
 );
 goog.addDependency(
   '../../../../src/oauthhelperstate.js',
   ['fireauth.OAuthHelperState'],
-  ['fireauth.AuthEvent'],
-  {}
+  ['fireauth.AuthEvent']
 );
 goog.addDependency(
   '../../../../src/oauthsigninhandler.js',
   ['fireauth.OAuthSignInHandler'],
-  [],
-  {}
+  []
 );
 goog.addDependency(
   '../../../../src/object.js',
   ['fireauth.object'],
-  ['fireauth.deprecation', 'fireauth.deprecation.Deprecations'],
-  {}
+  ['fireauth.deprecation', 'fireauth.deprecation.Deprecations']
 );
 goog.addDependency(
   '../../../../src/proactiverefresh.js',
   ['fireauth.ProactiveRefresh'],
-  ['fireauth.util', 'goog.Promise', 'goog.Timer'],
-  {}
+  ['fireauth.util', 'goog.Promise', 'goog.Timer']
 );
 goog.addDependency(
   '../../../../src/recaptchaverifier/grecaptcha.js',
   ['fireauth.grecaptcha'],
-  [],
-  {}
+  []
 );
 goog.addDependency(
   '../../../../src/recaptchaverifier/grecaptchamock.js',
@@ -617,23 +579,17 @@ goog.addDependency(
     'goog.events',
     'goog.events.EventType'
   ],
-  {}
+  { 'lang': 'es5' }
 );
 goog.addDependency(
   '../../../../src/recaptchaverifier/loader.js',
   ['fireauth.RecaptchaLoader'],
-  [],
-  {}
+  []
 );
 goog.addDependency(
   '../../../../src/recaptchaverifier/mockloader.js',
   ['fireauth.RecaptchaMockLoader'],
-  [
-    'fireauth.GRecaptchaMockFactory',
-    'fireauth.RecaptchaLoader',
-    'goog.Promise'
-  ],
-  {}
+  ['fireauth.GRecaptchaMockFactory', 'fireauth.RecaptchaLoader', 'goog.Promise']
 );
 goog.addDependency(
   '../../../../src/recaptchaverifier/realloader.js',
@@ -647,8 +603,7 @@ goog.addDependency(
     'goog.html.TrustedResourceUrl',
     'goog.net.jsloader',
     'goog.string.Const'
-  ],
-  {}
+  ]
 );
 goog.addDependency(
   '../../../../src/recaptchaverifier/recaptchaverifier.js',
@@ -665,8 +620,7 @@ goog.addDependency(
     'goog.Promise',
     'goog.array',
     'goog.dom'
-  ],
-  {}
+  ]
 );
 goog.addDependency(
   '../../../../src/rpchandler.js',
@@ -698,7 +652,7 @@ goog.addDependency(
     'goog.object',
     'goog.string.Const'
   ],
-  {}
+  { 'lang': 'es6' }
 );
 goog.addDependency(
   '../../../../src/storage/asyncstorage.js',
@@ -709,8 +663,7 @@ goog.addDependency(
     'fireauth.storage.Storage',
     'fireauth.util',
     'goog.Promise'
-  ],
-  {}
+  ]
 );
 goog.addDependency(
   '../../../../src/storage/factory.js',
@@ -723,8 +676,7 @@ goog.addDependency(
     'fireauth.storage.NullStorage',
     'fireauth.storage.SessionStorage',
     'fireauth.util'
-  ],
-  {}
+  ]
 );
 goog.addDependency(
   '../../../../src/storage/hybridindexeddb.js',
@@ -735,8 +687,7 @@ goog.addDependency(
     'fireauth.util',
     'goog.Promise',
     'goog.array'
-  ],
-  {}
+  ]
 );
 goog.addDependency(
   '../../../../src/storage/indexeddb.js',
@@ -753,13 +704,12 @@ goog.addDependency(
     'goog.Timer',
     'goog.array'
   ],
-  {}
+  { 'lang': 'es6' }
 );
 goog.addDependency(
   '../../../../src/storage/inmemorystorage.js',
   ['fireauth.storage.InMemoryStorage'],
-  ['goog.Promise'],
-  {}
+  ['goog.Promise']
 );
 goog.addDependency(
   '../../../../src/storage/localstorage.js',
@@ -771,8 +721,7 @@ goog.addDependency(
     'fireauth.util',
     'goog.Promise',
     'goog.events'
-  ],
-  {}
+  ]
 );
 goog.addDependency(
   '../../../../src/storage/mockstorage.js',
@@ -782,14 +731,12 @@ goog.addDependency(
     'fireauth.storage.Storage',
     'fireauth.util',
     'goog.array'
-  ],
-  {}
+  ]
 );
 goog.addDependency(
   '../../../../src/storage/nullstorage.js',
   ['fireauth.storage.NullStorage'],
-  ['fireauth.storage.Storage', 'goog.Promise'],
-  {}
+  ['fireauth.storage.Storage', 'goog.Promise']
 );
 goog.addDependency(
   '../../../../src/storage/sessionstorage.js',
@@ -800,14 +747,12 @@ goog.addDependency(
     'fireauth.storage.Storage',
     'fireauth.util',
     'goog.Promise'
-  ],
-  {}
+  ]
 );
 goog.addDependency(
   '../../../../src/storage/storage.js',
   ['fireauth.storage.Storage'],
-  [],
-  {}
+  []
 );
 goog.addDependency(
   '../../../../src/storageautheventmanager.js',
@@ -815,8 +760,7 @@ goog.addDependency(
     'fireauth.storage.AuthEventManager',
     'fireauth.storage.AuthEventManager.Keys'
   ],
-  ['fireauth.AuthEvent', 'fireauth.authStorage'],
-  {}
+  ['fireauth.AuthEvent', 'fireauth.authStorage']
 );
 goog.addDependency(
   '../../../../src/storageoauthhandlermanager.js',
@@ -826,20 +770,17 @@ goog.addDependency(
     'fireauth.OAuthHelperState',
     'fireauth.authStorage',
     'fireauth.storage.AuthEventManager.Keys'
-  ],
-  {}
+  ]
 );
 goog.addDependency(
   '../../../../src/storagependingredirectmanager.js',
   ['fireauth.storage.PendingRedirectManager'],
-  ['fireauth.authStorage'],
-  {}
+  ['fireauth.authStorage']
 );
 goog.addDependency(
   '../../../../src/storageredirectusermanager.js',
   ['fireauth.storage.RedirectUserManager'],
-  ['fireauth.AuthUser', 'fireauth.authStorage'],
-  {}
+  ['fireauth.AuthUser', 'fireauth.authStorage']
 );
 goog.addDependency(
   '../../../../src/storageusermanager.js',
@@ -849,8 +790,7 @@ goog.addDependency(
     'fireauth.authStorage',
     'fireauth.constants',
     'goog.Promise'
-  ],
-  {}
+  ]
 );
 goog.addDependency(
   '../../../../src/token.js',
@@ -867,19 +807,17 @@ goog.addDependency(
     'goog.Promise',
     'goog.asserts'
   ],
-  {}
+  { 'lang': 'es6' }
 );
 goog.addDependency(
   '../../../../src/universallinksubscriber.js',
   ['fireauth.UniversalLinkSubscriber'],
-  ['fireauth.util', 'goog.array'],
-  {}
+  ['fireauth.util', 'goog.array']
 );
 goog.addDependency(
   '../../../../src/userevent.js',
   ['fireauth.UserEvent', 'fireauth.UserEventType'],
-  ['goog.events', 'goog.events.Event'],
-  {}
+  ['goog.events', 'goog.events.Event']
 );
 goog.addDependency(
   '../../../../src/utils.js',
@@ -897,8 +835,7 @@ goog.addDependency(
     'goog.string',
     'goog.userAgent',
     'goog.window'
-  ],
-  {}
+  ]
 );
 goog.addDependency(
   '../../../../test/actioncodeinfo_test.js',
@@ -907,20 +844,17 @@ goog.addDependency(
     'fireauth.ActionCodeInfo',
     'fireauth.PhoneMultiFactorInfo',
     'goog.testing.jsunit'
-  ],
-  {}
+  ]
 );
 goog.addDependency(
   '../../../../test/actioncodesettings_test.js',
   ['fireauth.ActionCodeSettingsTest'],
-  ['fireauth.ActionCodeSettings', 'goog.testing.jsunit'],
-  {}
+  ['fireauth.ActionCodeSettings', 'goog.testing.jsunit']
 );
 goog.addDependency(
   '../../../../test/actioncodeurl_test.js',
   ['fireauth.ActionCodeUrlTest'],
-  ['fireauth.ActionCodeInfo', 'fireauth.ActionCodeURL', 'goog.testing.jsunit'],
-  {}
+  ['fireauth.ActionCodeInfo', 'fireauth.ActionCodeURL', 'goog.testing.jsunit']
 );
 goog.addDependency(
   '../../../../test/additionaluserinfo_test.js',
@@ -934,8 +868,7 @@ goog.addDependency(
     'fireauth.GoogleAdditionalUserInfo',
     'fireauth.TwitterAdditionalUserInfo',
     'goog.testing.jsunit'
-  ],
-  {}
+  ]
 );
 goog.addDependency(
   '../../../../test/args_test.js',
@@ -953,7 +886,7 @@ goog.addDependency(
     'goog.dom',
     'goog.testing.jsunit'
   ],
-  {}
+  { 'lang': 'es5' }
 );
 goog.addDependency(
   '../../../../test/auth_test.js',
@@ -1007,7 +940,7 @@ goog.addDependency(
     'goog.testing.jsunit',
     'goog.testing.recordFunction'
   ],
-  {}
+  { 'lang': 'es6' }
 );
 goog.addDependency(
   '../../../../test/authcredential_test.js',
@@ -1045,7 +978,7 @@ goog.addDependency(
     'goog.testing.jsunit',
     'goog.testing.recordFunction'
   ],
-  {}
+  { 'lang': 'es5' }
 );
 goog.addDependency(
   '../../../../test/authevent_test.js',
@@ -1055,8 +988,7 @@ goog.addDependency(
     'fireauth.AuthEvent',
     'fireauth.authenum.Error',
     'goog.testing.jsunit'
-  ],
-  {}
+  ]
 );
 goog.addDependency(
   '../../../../test/autheventmanager_test.js',
@@ -1092,14 +1024,12 @@ goog.addDependency(
     'goog.testing.jsunit',
     'goog.testing.mockmatchers',
     'goog.testing.recordFunction'
-  ],
-  {}
+  ]
 );
 goog.addDependency(
   '../../../../test/authsettings_test.js',
   ['fireauth.AuthSettingsTest'],
-  ['fireauth.AuthSettings', 'goog.testing.jsunit'],
-  {}
+  ['fireauth.AuthSettings', 'goog.testing.jsunit']
 );
 goog.addDependency(
   '../../../../test/authstorage_test.js',
@@ -1125,8 +1055,7 @@ goog.addDependency(
     'goog.testing.events.Event',
     'goog.testing.jsunit',
     'goog.testing.recordFunction'
-  ],
-  {}
+  ]
 );
 goog.addDependency(
   '../../../../test/authuser_test.js',
@@ -1179,7 +1108,7 @@ goog.addDependency(
     'goog.testing.jsunit',
     'goog.testing.recordFunction'
   ],
-  {}
+  { 'lang': 'es5' }
 );
 goog.addDependency(
   '../../../../test/cacherequest_test.js',
@@ -1190,8 +1119,7 @@ goog.addDependency(
     'goog.testing.MockClock',
     'goog.testing.TestCase',
     'goog.testing.jsunit'
-  ],
-  {}
+  ]
 );
 goog.addDependency(
   '../../../../test/confirmationresult_test.js',
@@ -1208,7 +1136,7 @@ goog.addDependency(
     'goog.testing.TestCase',
     'goog.testing.jsunit'
   ],
-  {}
+  { 'lang': 'es5' }
 );
 goog.addDependency(
   '../../../../test/cordovahandler_test.js',
@@ -1236,14 +1164,12 @@ goog.addDependency(
     'goog.testing.TestCase',
     'goog.testing.jsunit',
     'goog.testing.recordFunction'
-  ],
-  {}
+  ]
 );
 goog.addDependency(
   '../../../../test/defines_test.js',
   ['fireauth.constantsTest'],
-  ['fireauth.constants', 'goog.testing.jsunit'],
-  {}
+  ['fireauth.constants', 'goog.testing.jsunit']
 );
 goog.addDependency(
   '../../../../test/deprecation_test.js',
@@ -1254,8 +1180,7 @@ goog.addDependency(
     'fireauth.util',
     'goog.testing.MockControl',
     'goog.testing.jsunit'
-  ],
-  {}
+  ]
 );
 goog.addDependency(
   '../../../../test/dynamiclink_test.js',
@@ -1267,8 +1192,7 @@ goog.addDependency(
     'fireauth.util',
     'goog.Uri',
     'goog.testing.jsunit'
-  ],
-  {}
+  ]
 );
 goog.addDependency(
   '../../../../test/error_test.js',
@@ -1284,26 +1208,23 @@ goog.addDependency(
     'goog.object',
     'goog.string.format',
     'goog.testing.jsunit'
-  ],
-  {}
+  ]
 );
 goog.addDependency(
   '../../../../test/exports_lib_test.js',
   ['fireauth.exportlibTest'],
-  ['fireauth.args', 'fireauth.exportlib', 'goog.testing.jsunit'],
-  {}
+  ['fireauth.args', 'fireauth.exportlib', 'goog.testing.jsunit']
 );
 goog.addDependency(
   '../../../../test/idp_test.js',
   ['fireauth.idpTest'],
-  ['fireauth.idp', 'goog.testing.jsunit'],
-  {}
+  ['fireauth.idp', 'goog.testing.jsunit']
 );
 goog.addDependency(
   '../../../../test/idtoken_test.js',
   ['fireauth.IdTokenTest'],
   ['fireauth.IdToken', 'goog.testing.PropertyReplacer', 'goog.testing.jsunit'],
-  {}
+  { 'lang': 'es6' }
 );
 goog.addDependency(
   '../../../../test/idtokenresult_test.js',
@@ -1314,8 +1235,7 @@ goog.addDependency(
     'fireauth.authenum.Error',
     'fireauth.common.testHelper',
     'goog.testing.jsunit'
-  ],
-  {}
+  ]
 );
 goog.addDependency(
   '../../../../test/iframeclient/ifchandler_test.js',
@@ -1347,8 +1267,7 @@ goog.addDependency(
     'goog.testing.jsunit',
     'goog.testing.mockmatchers',
     'goog.testing.recordFunction'
-  ],
-  {}
+  ]
 );
 goog.addDependency(
   '../../../../test/iframeclient/iframewrapper_test.js',
@@ -1366,8 +1285,7 @@ goog.addDependency(
     'goog.testing.PropertyReplacer',
     'goog.testing.jsunit',
     'goog.testing.mockmatchers'
-  ],
-  {}
+  ]
 );
 goog.addDependency(
   '../../../../test/messagechannel/postmessager_test.js',
@@ -1377,8 +1295,7 @@ goog.addDependency(
     'fireauth.messagechannel.WorkerClientPostMessager',
     'goog.testing.MockControl',
     'goog.testing.jsunit'
-  ],
-  {}
+  ]
 );
 goog.addDependency(
   '../../../../test/messagechannel/receiver_test.js',
@@ -1390,8 +1307,7 @@ goog.addDependency(
     'goog.events.EventTarget',
     'goog.testing.MockControl',
     'goog.testing.jsunit'
-  ],
-  {}
+  ]
 );
 goog.addDependency(
   '../../../../test/messagechannel/sender_test.js',
@@ -1407,8 +1323,7 @@ goog.addDependency(
     'goog.testing.MockClock',
     'goog.testing.MockControl',
     'goog.testing.jsunit'
-  ],
-  {}
+  ]
 );
 goog.addDependency(
   '../../../../test/multifactorassertion_test.js',
@@ -1426,8 +1341,7 @@ goog.addDependency(
     'goog.Promise',
     'goog.testing.MockControl',
     'goog.testing.jsunit'
-  ],
-  {}
+  ]
 );
 goog.addDependency(
   '../../../../test/multifactorerror_test.js',
@@ -1440,8 +1354,7 @@ goog.addDependency(
     'goog.Promise',
     'goog.object',
     'goog.testing.jsunit'
-  ],
-  {}
+  ]
 );
 goog.addDependency(
   '../../../../test/multifactorgenerator_test.js',
@@ -1456,8 +1369,7 @@ goog.addDependency(
     'fireauth.common.testHelper',
     'fireauth.constants',
     'goog.testing.jsunit'
-  ],
-  {}
+  ]
 );
 goog.addDependency(
   '../../../../test/multifactorinfo_test.js',
@@ -1470,8 +1382,7 @@ goog.addDependency(
     'fireauth.common.testHelper',
     'fireauth.constants',
     'goog.testing.jsunit'
-  ],
-  {}
+  ]
 );
 goog.addDependency(
   '../../../../test/multifactorresolver_test.js',
@@ -1489,8 +1400,7 @@ goog.addDependency(
     'goog.object',
     'goog.testing.MockControl',
     'goog.testing.jsunit'
-  ],
-  {}
+  ]
 );
 goog.addDependency(
   '../../../../test/multifactorsession_test.js',
@@ -1501,8 +1411,7 @@ goog.addDependency(
     'fireauth.authenum.Error',
     'fireauth.common.testHelper',
     'goog.testing.jsunit'
-  ],
-  {}
+  ]
 );
 goog.addDependency(
   '../../../../test/multifactoruser_test.js',
@@ -1525,13 +1434,12 @@ goog.addDependency(
     'goog.testing.MockControl',
     'goog.testing.jsunit'
   ],
-  {}
+  { 'lang': 'es5' }
 );
 goog.addDependency(
   '../../../../test/oauthhelperstate_test.js',
   ['fireauth.OAuthHelperStateTest'],
-  ['fireauth.AuthEvent', 'fireauth.OAuthHelperState', 'goog.testing.jsunit'],
-  {}
+  ['fireauth.AuthEvent', 'fireauth.OAuthHelperState', 'goog.testing.jsunit']
 );
 goog.addDependency(
   '../../../../test/object_test.js',
@@ -1543,8 +1451,7 @@ goog.addDependency(
     'goog.testing.jsunit',
     'goog.testing.recordFunction',
     'goog.userAgent'
-  ],
-  {}
+  ]
 );
 goog.addDependency(
   '../../../../test/proactiverefresh_test.js',
@@ -1559,8 +1466,7 @@ goog.addDependency(
     'goog.testing.PropertyReplacer',
     'goog.testing.jsunit',
     'goog.testing.recordFunction'
-  ],
-  {}
+  ]
 );
 goog.addDependency(
   '../../../../test/recaptchaverifier/grecaptchamock_test.js',
@@ -1576,7 +1482,7 @@ goog.addDependency(
     'goog.testing.jsunit',
     'goog.testing.recordFunction'
   ],
-  {}
+  { 'lang': 'es5' }
 );
 goog.addDependency(
   '../../../../test/recaptchaverifier/mockloader_test.js',
@@ -1585,8 +1491,7 @@ goog.addDependency(
     'fireauth.GRecaptchaMockFactory',
     'fireauth.RecaptchaMockLoader',
     'goog.testing.jsunit'
-  ],
-  {}
+  ]
 );
 goog.addDependency(
   '../../../../test/recaptchaverifier/realloader_test.js',
@@ -1602,8 +1507,7 @@ goog.addDependency(
     'goog.testing.TestCase',
     'goog.testing.jsunit',
     'goog.testing.mockmatchers'
-  ],
-  {}
+  ]
 );
 goog.addDependency(
   '../../../../test/recaptchaverifier/recaptchaverifier_test.js',
@@ -1632,7 +1536,7 @@ goog.addDependency(
     'goog.testing.mockmatchers',
     'goog.testing.recordFunction'
   ],
-  {}
+  { 'lang': 'es5' }
 );
 goog.addDependency(
   '../../../../test/rpchandler_test.js',
@@ -1665,7 +1569,7 @@ goog.addDependency(
     'goog.testing.jsunit',
     'goog.testing.recordFunction'
   ],
-  {}
+  { 'lang': 'es5' }
 );
 goog.addDependency(
   '../../../../test/storage/asyncstorage_test.js',
@@ -1677,8 +1581,7 @@ goog.addDependency(
     'fireauth.storage.testHelper.FakeAsyncStorage',
     'goog.testing.PropertyReplacer',
     'goog.testing.jsunit'
-  ],
-  {}
+  ]
 );
 goog.addDependency(
   '../../../../test/storage/factory_test.js',
@@ -1698,8 +1601,7 @@ goog.addDependency(
     'goog.testing.PropertyReplacer',
     'goog.testing.jsunit',
     'goog.testing.recordFunction'
-  ],
-  {}
+  ]
 );
 goog.addDependency(
   '../../../../test/storage/hybridindexeddb_test.js',
@@ -1718,8 +1620,7 @@ goog.addDependency(
     'goog.testing.events.Event',
     'goog.testing.jsunit',
     'goog.testing.recordFunction'
-  ],
-  {}
+  ]
 );
 goog.addDependency(
   '../../../../test/storage/indexeddb_test.js',
@@ -1738,7 +1639,7 @@ goog.addDependency(
     'goog.testing.jsunit',
     'goog.testing.recordFunction'
   ],
-  {}
+  { 'lang': 'es6' }
 );
 goog.addDependency(
   '../../../../test/storage/inmemorystorage_test.js',
@@ -1748,8 +1649,7 @@ goog.addDependency(
     'fireauth.storage.Storage',
     'fireauth.storage.testHelper',
     'goog.testing.jsunit'
-  ],
-  {}
+  ]
 );
 goog.addDependency(
   '../../../../test/storage/localstorage_test.js',
@@ -1767,8 +1667,7 @@ goog.addDependency(
     'goog.testing.events.Event',
     'goog.testing.jsunit',
     'goog.testing.recordFunction'
-  ],
-  {}
+  ]
 );
 goog.addDependency(
   '../../../../test/storage/mockstorage_test.js',
@@ -1782,8 +1681,7 @@ goog.addDependency(
     'goog.testing.events.Event',
     'goog.testing.jsunit',
     'goog.testing.recordFunction'
-  ],
-  {}
+  ]
 );
 goog.addDependency(
   '../../../../test/storage/nullstorage_test.js',
@@ -1793,8 +1691,7 @@ goog.addDependency(
     'fireauth.storage.Storage',
     'goog.Promise',
     'goog.testing.jsunit'
-  ],
-  {}
+  ]
 );
 goog.addDependency(
   '../../../../test/storage/sessionstorage_test.js',
@@ -1808,8 +1705,7 @@ goog.addDependency(
     'fireauth.util',
     'goog.testing.PropertyReplacer',
     'goog.testing.jsunit'
-  ],
-  {}
+  ]
 );
 goog.addDependency(
   '../../../../test/storage/testhelper.js',
@@ -1818,7 +1714,7 @@ goog.addDependency(
     'fireauth.storage.testHelper.FakeAsyncStorage'
   ],
   ['goog.Promise'],
-  {}
+  { 'lang': 'es5' }
 );
 goog.addDependency(
   '../../../../test/storageautheventmanager_test.js',
@@ -1838,8 +1734,7 @@ goog.addDependency(
     'goog.testing.events.Event',
     'goog.testing.jsunit',
     'goog.testing.recordFunction'
-  ],
-  {}
+  ]
 );
 goog.addDependency(
   '../../../../test/storageoauthhandlermanager_test.js',
@@ -1855,8 +1750,7 @@ goog.addDependency(
     'goog.Promise',
     'goog.testing.PropertyReplacer',
     'goog.testing.jsunit'
-  ],
-  {}
+  ]
 );
 goog.addDependency(
   '../../../../test/storagependingredirectmanager_test.js',
@@ -1869,8 +1763,7 @@ goog.addDependency(
     'goog.Promise',
     'goog.testing.PropertyReplacer',
     'goog.testing.jsunit'
-  ],
-  {}
+  ]
 );
 goog.addDependency(
   '../../../../test/storageredirectusermanager_test.js',
@@ -1886,8 +1779,7 @@ goog.addDependency(
     'goog.testing.MockClock',
     'goog.testing.PropertyReplacer',
     'goog.testing.jsunit'
-  ],
-  {}
+  ]
 );
 goog.addDependency(
   '../../../../test/storageusermanager_test.js',
@@ -1909,7 +1801,7 @@ goog.addDependency(
     'goog.testing.jsunit',
     'goog.testing.recordFunction'
   ],
-  {}
+  { 'lang': 'es6' }
 );
 goog.addDependency(
   '../../../../test/testhelper.js',
@@ -1921,7 +1813,7 @@ goog.addDependency(
     'goog.crypt.base64',
     'goog.object'
   ],
-  {}
+  { 'lang': 'es6' }
 );
 goog.addDependency(
   '../../../../test/token_test.js',
@@ -1937,7 +1829,7 @@ goog.addDependency(
     'goog.testing.PropertyReplacer',
     'goog.testing.jsunit'
   ],
-  {}
+  { 'lang': 'es6' }
 );
 goog.addDependency(
   '../../../../test/universallinksubscriber_test.js',
@@ -1946,14 +1838,12 @@ goog.addDependency(
     'fireauth.UniversalLinkSubscriber',
     'goog.testing.jsunit',
     'goog.testing.recordFunction'
-  ],
-  {}
+  ]
 );
 goog.addDependency(
   '../../../../test/userevent_test.js',
   ['fireauth.UserEventTest'],
-  ['fireauth.UserEvent', 'fireauth.UserEventType', 'goog.testing.jsunit'],
-  {}
+  ['fireauth.UserEvent', 'fireauth.UserEventType', 'goog.testing.jsunit']
 );
 goog.addDependency(
   '../../../../test/utils_test.js',
@@ -1968,5 +1858,5 @@ goog.addDependency(
     'goog.testing.jsunit',
     'goog.userAgent'
   ],
-  {}
+  { 'lang': 'es6' }
 );
