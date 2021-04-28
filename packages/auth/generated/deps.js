@@ -1,0 +1,1972 @@
+goog.addDependency(
+  '../../../../src/actioncodeinfo.js',
+  ['fireauth.ActionCodeInfo'],
+  ['fireauth.MultiFactorInfo', 'fireauth.object'],
+  {}
+);
+goog.addDependency(
+  '../../../../src/actioncodesettings.js',
+  ['fireauth.ActionCodeSettings'],
+  ['fireauth.AuthError', 'fireauth.authenum.Error'],
+  {}
+);
+goog.addDependency(
+  '../../../../src/actioncodeurl.js',
+  ['fireauth.ActionCodeURL'],
+  [
+    'fireauth.ActionCodeInfo',
+    'fireauth.AuthError',
+    'fireauth.authenum.Error',
+    'fireauth.object',
+    'goog.Uri'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../src/additionaluserinfo.js',
+  [
+    'fireauth.AdditionalUserInfo',
+    'fireauth.FacebookAdditionalUserInfo',
+    'fireauth.FederatedAdditionalUserInfo',
+    'fireauth.GenericAdditionalUserInfo',
+    'fireauth.GithubAdditionalUserInfo',
+    'fireauth.GoogleAdditionalUserInfo',
+    'fireauth.TwitterAdditionalUserInfo'
+  ],
+  ['fireauth.IdToken', 'fireauth.idp', 'fireauth.object', 'fireauth.util'],
+  {}
+);
+goog.addDependency(
+  '../../../../src/args.js',
+  ['fireauth.args', 'fireauth.args.Argument'],
+  [
+    'fireauth.Auth',
+    'fireauth.AuthError',
+    'fireauth.AuthUser',
+    'fireauth.MultiFactorSession',
+    'fireauth.authenum.Error'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../src/auth.js',
+  ['fireauth.Auth'],
+  [
+    'fireauth.ActionCodeInfo',
+    'fireauth.ActionCodeSettings',
+    'fireauth.AdditionalUserInfo',
+    'fireauth.AuthCredential',
+    'fireauth.AuthError',
+    'fireauth.AuthEvent',
+    'fireauth.AuthEventHandler',
+    'fireauth.AuthEventManager',
+    'fireauth.AuthProvider',
+    'fireauth.AuthSettings',
+    'fireauth.AuthUser',
+    'fireauth.ConfirmationResult',
+    'fireauth.EmailAuthProvider',
+    'fireauth.MultiFactorError',
+    'fireauth.RpcHandler',
+    'fireauth.UserEventType',
+    'fireauth.authenum.Error',
+    'fireauth.constants',
+    'fireauth.deprecation',
+    'fireauth.idp',
+    'fireauth.iframeclient.IfcHandler',
+    'fireauth.object',
+    'fireauth.storage.RedirectUserManager',
+    'fireauth.storage.UserManager',
+    'fireauth.util',
+    'goog.Promise',
+    'goog.array',
+    'goog.events',
+    'goog.events.Event',
+    'goog.events.EventTarget',
+    'goog.object'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../src/authcredential.js',
+  [
+    'fireauth.AuthCredential',
+    'fireauth.AuthProvider',
+    'fireauth.EmailAuthCredential',
+    'fireauth.EmailAuthProvider',
+    'fireauth.FacebookAuthProvider',
+    'fireauth.FederatedProvider',
+    'fireauth.GithubAuthProvider',
+    'fireauth.GoogleAuthProvider',
+    'fireauth.OAuthCredential',
+    'fireauth.OAuthProvider',
+    'fireauth.OAuthResponse',
+    'fireauth.PhoneAuthCredential',
+    'fireauth.PhoneAuthProvider',
+    'fireauth.SAMLAuthCredential',
+    'fireauth.SAMLAuthProvider',
+    'fireauth.TwitterAuthProvider'
+  ],
+  [
+    'fireauth.ActionCodeInfo',
+    'fireauth.ActionCodeURL',
+    'fireauth.AuthError',
+    'fireauth.DynamicLink',
+    'fireauth.IdToken',
+    'fireauth.MultiFactorAuthCredential',
+    'fireauth.MultiFactorEnrollmentRequestIdentifier',
+    'fireauth.MultiFactorSession',
+    'fireauth.MultiFactorSignInRequestIdentifier',
+    'fireauth.authenum.Error',
+    'fireauth.constants',
+    'fireauth.idp',
+    'fireauth.object',
+    'fireauth.util',
+    'goog.Promise',
+    'goog.Uri',
+    'goog.array',
+    'goog.object'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../src/authevent.js',
+  ['fireauth.AuthEvent'],
+  ['fireauth.AuthError', 'fireauth.authenum.Error'],
+  {}
+);
+goog.addDependency(
+  '../../../../src/autheventmanager.js',
+  [
+    'fireauth.AuthEventHandler',
+    'fireauth.AuthEventManager',
+    'fireauth.AuthEventManager.Result',
+    'fireauth.PopupAuthEventProcessor',
+    'fireauth.RedirectAuthEventProcessor'
+  ],
+  [
+    'fireauth.AuthCredential',
+    'fireauth.AuthError',
+    'fireauth.AuthEvent',
+    'fireauth.CordovaHandler',
+    'fireauth.authenum.Error',
+    'fireauth.constants',
+    'fireauth.iframeclient.IfcHandler',
+    'fireauth.storage.PendingRedirectManager',
+    'fireauth.util',
+    'goog.Promise',
+    'goog.Timer',
+    'goog.array'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../src/authsettings.js',
+  ['fireauth.AuthSettings'],
+  [],
+  {}
+);
+goog.addDependency(
+  '../../../../src/authstorage.js',
+  [
+    'fireauth.authStorage',
+    'fireauth.authStorage.Key',
+    'fireauth.authStorage.Manager',
+    'fireauth.authStorage.Persistence'
+  ],
+  [
+    'fireauth.AuthError',
+    'fireauth.authenum.Error',
+    'fireauth.storage.Factory',
+    'fireauth.storage.IndexedDB',
+    'fireauth.storage.Storage',
+    'fireauth.util',
+    'goog.Promise',
+    'goog.array',
+    'goog.events',
+    'goog.object'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../src/authuser.js',
+  [
+    'fireauth.AuthUser',
+    'fireauth.AuthUser.AccountInfo',
+    'fireauth.AuthUserInfo',
+    'fireauth.TokenRefreshTime',
+    'fireauth.UserMetadata'
+  ],
+  [
+    'fireauth.ActionCodeSettings',
+    'fireauth.AdditionalUserInfo',
+    'fireauth.AuthCredential',
+    'fireauth.AuthError',
+    'fireauth.AuthEvent',
+    'fireauth.AuthEventHandler',
+    'fireauth.AuthEventManager',
+    'fireauth.AuthProvider',
+    'fireauth.ConfirmationResult',
+    'fireauth.IdTokenResult',
+    'fireauth.MultiFactorError',
+    'fireauth.MultiFactorUser',
+    'fireauth.PhoneAuthProvider',
+    'fireauth.ProactiveRefresh',
+    'fireauth.RpcHandler',
+    'fireauth.StsTokenManager',
+    'fireauth.UserEvent',
+    'fireauth.UserEventType',
+    'fireauth.authenum.Error',
+    'fireauth.constants',
+    'fireauth.constants.AuthEventType',
+    'fireauth.deprecation',
+    'fireauth.idp',
+    'fireauth.iframeclient.IfcHandler',
+    'fireauth.object',
+    'fireauth.util',
+    'goog.Promise',
+    'goog.array',
+    'goog.events',
+    'goog.events.Event',
+    'goog.events.EventTarget',
+    'goog.object'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../src/cacherequest.js',
+  ['fireauth.CacheRequest'],
+  ['goog.Promise'],
+  {}
+);
+goog.addDependency(
+  '../../../../src/confirmationresult.js',
+  ['fireauth.ConfirmationResult'],
+  ['fireauth.PhoneAuthProvider', 'fireauth.object', 'goog.Promise'],
+  {}
+);
+goog.addDependency(
+  '../../../../src/cordovahandler.js',
+  ['fireauth.CordovaHandler'],
+  [
+    'fireauth.AuthError',
+    'fireauth.AuthEvent',
+    'fireauth.AuthProvider',
+    'fireauth.DynamicLink',
+    'fireauth.OAuthSignInHandler',
+    'fireauth.UniversalLinkSubscriber',
+    'fireauth.authenum.Error',
+    'fireauth.constants',
+    'fireauth.iframeclient.IfcHandler',
+    'fireauth.storage.AuthEventManager',
+    'fireauth.storage.OAuthHandlerManager',
+    'fireauth.util',
+    'goog.Promise',
+    'goog.Timer',
+    'goog.Uri',
+    'goog.array',
+    'goog.crypt',
+    'goog.crypt.Sha256'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../src/defines.js',
+  ['fireauth.constants', 'fireauth.constants.AuthEventType'],
+  [],
+  {}
+);
+goog.addDependency(
+  '../../../../src/deprecation.js',
+  ['fireauth.deprecation', 'fireauth.deprecation.Deprecations'],
+  ['fireauth.util'],
+  {}
+);
+goog.addDependency(
+  '../../../../src/dynamiclink.js',
+  ['fireauth.DynamicLink'],
+  [
+    'fireauth.AuthError',
+    'fireauth.authenum.Error',
+    'fireauth.object',
+    'fireauth.util',
+    'goog.Uri'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../src/error_auth.js',
+  ['fireauth.AuthError', 'fireauth.authenum', 'fireauth.authenum.Error'],
+  [],
+  {}
+);
+goog.addDependency(
+  '../../../../src/error_invalidorigin.js',
+  ['fireauth.InvalidOriginError'],
+  ['fireauth.AuthError', 'fireauth.authenum.Error', 'goog.Uri', 'goog.string'],
+  {}
+);
+goog.addDependency(
+  '../../../../src/error_withcredential.js',
+  ['fireauth.AuthErrorWithCredential'],
+  [
+    'fireauth.AuthError',
+    'fireauth.AuthProvider',
+    'fireauth.object',
+    'goog.object'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../src/exports_auth.js',
+  ['fireauth.exports'],
+  [
+    'fireauth.ActionCodeInfo',
+    'fireauth.ActionCodeURL',
+    'fireauth.Auth',
+    'fireauth.AuthCredential',
+    'fireauth.AuthError',
+    'fireauth.AuthErrorWithCredential',
+    'fireauth.AuthSettings',
+    'fireauth.AuthUser',
+    'fireauth.ConfirmationResult',
+    'fireauth.EmailAuthCredential',
+    'fireauth.EmailAuthProvider',
+    'fireauth.FacebookAuthProvider',
+    'fireauth.GRecaptchaMockFactory',
+    'fireauth.GithubAuthProvider',
+    'fireauth.GoogleAuthProvider',
+    'fireauth.InvalidOriginError',
+    'fireauth.MultiFactorError',
+    'fireauth.MultiFactorResolver',
+    'fireauth.MultiFactorUser',
+    'fireauth.OAuthCredential',
+    'fireauth.OAuthProvider',
+    'fireauth.PhoneAuthCredential',
+    'fireauth.PhoneAuthProvider',
+    'fireauth.PhoneMultiFactorGenerator',
+    'fireauth.RecaptchaVerifier',
+    'fireauth.SAMLAuthCredential',
+    'fireauth.SAMLAuthProvider',
+    'fireauth.TwitterAuthProvider',
+    'fireauth.args',
+    'fireauth.authStorage.Persistence',
+    'fireauth.exportlib',
+    'fireauth.grecaptcha',
+    'fireauth.idp.ProviderId',
+    'goog.Promise'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../src/exports_lib.js',
+  ['fireauth.exportlib', 'fireauth.exportlib.ExportedMethod'],
+  ['fireauth.args'],
+  {}
+);
+goog.addDependency(
+  '../../../../src/exports_unreleased.js',
+  ['fireauth.exportsUnreleased'],
+  [],
+  {}
+);
+goog.addDependency(
+  '../../../../src/idp.js',
+  [
+    'fireauth.idp',
+    'fireauth.idp.IdpSettings',
+    'fireauth.idp.ProviderId',
+    'fireauth.idp.Settings',
+    'fireauth.idp.SignInMethod'
+  ],
+  ['fireauth.constants'],
+  {}
+);
+goog.addDependency(
+  '../../../../src/idtoken.js',
+  ['fireauth.IdToken'],
+  ['goog.crypt', 'goog.crypt.base64'],
+  {}
+);
+goog.addDependency(
+  '../../../../src/idtokenresult.js',
+  ['fireauth.IdTokenResult'],
+  [
+    'fireauth.AuthError',
+    'fireauth.IdToken',
+    'fireauth.authenum.Error',
+    'fireauth.object',
+    'fireauth.util'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../src/iframeclient/ifchandler.js',
+  [
+    'fireauth.iframeclient.IfcHandler',
+    'fireauth.iframeclient.IframeUrlBuilder',
+    'fireauth.iframeclient.OAuthUrlBuilder'
+  ],
+  [
+    'fireauth.AuthError',
+    'fireauth.AuthEvent',
+    'fireauth.AuthProvider',
+    'fireauth.InvalidOriginError',
+    'fireauth.OAuthSignInHandler',
+    'fireauth.RpcHandler',
+    'fireauth.authenum.Error',
+    'fireauth.constants',
+    'fireauth.iframeclient.IframeWrapper',
+    'fireauth.util',
+    'goog.Promise',
+    'goog.Timer',
+    'goog.Uri',
+    'goog.array',
+    'goog.object'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../src/iframeclient/iframewrapper.js',
+  ['fireauth.iframeclient.IframeWrapper'],
+  [
+    'fireauth.util',
+    'goog.Promise',
+    'goog.html.TrustedResourceUrl',
+    'goog.net.jsloader',
+    'goog.string.Const'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../src/messagechannel/defines.js',
+  [
+    'fireauth.messagechannel.Error',
+    'fireauth.messagechannel.Status',
+    'fireauth.messagechannel.TimeoutDuration',
+    'fireauth.messagechannel.utils'
+  ],
+  [],
+  {}
+);
+goog.addDependency(
+  '../../../../src/messagechannel/postmessager.js',
+  [
+    'fireauth.messagechannel.PostMessager',
+    'fireauth.messagechannel.WindowPostMessager',
+    'fireauth.messagechannel.WorkerClientPostMessager'
+  ],
+  [],
+  {}
+);
+goog.addDependency(
+  '../../../../src/messagechannel/receiver.js',
+  ['fireauth.messagechannel.Receiver'],
+  [
+    'fireauth.messagechannel.Status',
+    'goog.Promise',
+    'goog.array',
+    'goog.object'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../src/messagechannel/sender.js',
+  ['fireauth.messagechannel.Sender'],
+  [
+    'fireauth.messagechannel.Error',
+    'fireauth.messagechannel.PostMessager',
+    'fireauth.messagechannel.Status',
+    'fireauth.messagechannel.TimeoutDuration',
+    'fireauth.messagechannel.utils',
+    'goog.Promise',
+    'goog.array'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../src/multifactorassertion.js',
+  [
+    'fireauth.AuthCredentialMultiFactorAssertion',
+    'fireauth.MultiFactorAssertion',
+    'fireauth.PhoneMultiFactorAssertion'
+  ],
+  [
+    'fireauth.AuthError',
+    'fireauth.MultiFactorAuthCredential',
+    'fireauth.MultiFactorSession',
+    'fireauth.PhoneAuthProvider',
+    'fireauth.authenum.Error',
+    'fireauth.object'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../src/multifactorauthcredential.js',
+  [
+    'fireauth.MultiFactorAuthCredential',
+    'fireauth.MultiFactorEnrollmentRequestIdentifier',
+    'fireauth.MultiFactorSignInRequestIdentifier'
+  ],
+  [],
+  {}
+);
+goog.addDependency(
+  '../../../../src/multifactorerror.js',
+  ['fireauth.MultiFactorError'],
+  [
+    'fireauth.AuthError',
+    'fireauth.MultiFactorResolver',
+    'fireauth.authenum.Error',
+    'fireauth.object',
+    'goog.object'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../src/multifactorgenerator.js',
+  ['fireauth.PhoneMultiFactorGenerator'],
+  [
+    'fireauth.PhoneMultiFactorAssertion',
+    'fireauth.constants',
+    'fireauth.object'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../src/multifactorinfo.js',
+  ['fireauth.MultiFactorInfo', 'fireauth.PhoneMultiFactorInfo'],
+  [
+    'fireauth.AuthError',
+    'fireauth.authenum.Error',
+    'fireauth.constants',
+    'fireauth.object'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../src/multifactorresolver.js',
+  ['fireauth.MultiFactorResolver'],
+  [
+    'fireauth.AuthError',
+    'fireauth.MultiFactorInfo',
+    'fireauth.MultiFactorSession',
+    'fireauth.authenum.Error',
+    'fireauth.object',
+    'goog.array',
+    'goog.object'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../src/multifactorsession.js',
+  ['fireauth.MultiFactorSession'],
+  ['fireauth.AuthError', 'fireauth.authenum.Error', 'goog.Promise'],
+  {}
+);
+goog.addDependency(
+  '../../../../src/multifactoruser.js',
+  ['fireauth.MultiFactorUser'],
+  [
+    'fireauth.MultiFactorAssertion',
+    'fireauth.MultiFactorInfo',
+    'fireauth.MultiFactorSession',
+    'fireauth.UserEventType',
+    'fireauth.object',
+    'goog.array',
+    'goog.events'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../src/oauthhelperstate.js',
+  ['fireauth.OAuthHelperState'],
+  ['fireauth.AuthEvent'],
+  {}
+);
+goog.addDependency(
+  '../../../../src/oauthsigninhandler.js',
+  ['fireauth.OAuthSignInHandler'],
+  [],
+  {}
+);
+goog.addDependency(
+  '../../../../src/object.js',
+  ['fireauth.object'],
+  ['fireauth.deprecation', 'fireauth.deprecation.Deprecations'],
+  {}
+);
+goog.addDependency(
+  '../../../../src/proactiverefresh.js',
+  ['fireauth.ProactiveRefresh'],
+  ['fireauth.util', 'goog.Promise', 'goog.Timer'],
+  {}
+);
+goog.addDependency(
+  '../../../../src/recaptchaverifier/grecaptcha.js',
+  ['fireauth.grecaptcha'],
+  [],
+  {}
+);
+goog.addDependency(
+  '../../../../src/recaptchaverifier/grecaptchamock.js',
+  ['fireauth.GRecaptchaMockFactory', 'fireauth.RecaptchaMock'],
+  [
+    'fireauth.grecaptcha',
+    'fireauth.util',
+    'goog.dom',
+    'goog.events',
+    'goog.events.EventType'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../src/recaptchaverifier/loader.js',
+  ['fireauth.RecaptchaLoader'],
+  [],
+  {}
+);
+goog.addDependency(
+  '../../../../src/recaptchaverifier/mockloader.js',
+  ['fireauth.RecaptchaMockLoader'],
+  [
+    'fireauth.GRecaptchaMockFactory',
+    'fireauth.RecaptchaLoader',
+    'goog.Promise'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../src/recaptchaverifier/realloader.js',
+  ['fireauth.RecaptchaRealLoader'],
+  [
+    'fireauth.AuthError',
+    'fireauth.RecaptchaLoader',
+    'fireauth.authenum.Error',
+    'fireauth.util',
+    'goog.Promise',
+    'goog.html.TrustedResourceUrl',
+    'goog.net.jsloader',
+    'goog.string.Const'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../src/recaptchaverifier/recaptchaverifier.js',
+  ['fireauth.BaseRecaptchaVerifier', 'fireauth.RecaptchaVerifier'],
+  [
+    'fireauth.AuthError',
+    'fireauth.RecaptchaMockLoader',
+    'fireauth.RecaptchaRealLoader',
+    'fireauth.RpcHandler',
+    'fireauth.authenum.Error',
+    'fireauth.constants',
+    'fireauth.object',
+    'fireauth.util',
+    'goog.Promise',
+    'goog.array',
+    'goog.dom'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../src/rpchandler.js',
+  [
+    'fireauth.RpcHandler',
+    'fireauth.RpcHandler.ApiMethodHandler',
+    'fireauth.RpcHandler.VerifyAssertionData',
+    'fireauth.XmlHttpFactory'
+  ],
+  [
+    'fireauth.AuthError',
+    'fireauth.AuthErrorWithCredential',
+    'fireauth.authenum.Error',
+    'fireauth.constants',
+    'fireauth.idp',
+    'fireauth.idp.ProviderId',
+    'fireauth.object',
+    'fireauth.util',
+    'goog.Promise',
+    'goog.Uri',
+    'goog.html.TrustedResourceUrl',
+    'goog.json',
+    'goog.net.CorsXmlHttpFactory',
+    'goog.net.EventType',
+    'goog.net.FetchXmlHttpFactory',
+    'goog.net.XhrIo',
+    'goog.net.XmlHttpFactory',
+    'goog.net.jsloader',
+    'goog.object',
+    'goog.string.Const'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../src/storage/asyncstorage.js',
+  ['fireauth.storage.AsyncStorage'],
+  [
+    'fireauth.AuthError',
+    'fireauth.authenum.Error',
+    'fireauth.storage.Storage',
+    'fireauth.util',
+    'goog.Promise'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../src/storage/factory.js',
+  ['fireauth.storage.Factory', 'fireauth.storage.Factory.EnvConfig'],
+  [
+    'fireauth.storage.AsyncStorage',
+    'fireauth.storage.HybridIndexedDB',
+    'fireauth.storage.InMemoryStorage',
+    'fireauth.storage.LocalStorage',
+    'fireauth.storage.NullStorage',
+    'fireauth.storage.SessionStorage',
+    'fireauth.util'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../src/storage/hybridindexeddb.js',
+  ['fireauth.storage.HybridIndexedDB'],
+  [
+    'fireauth.storage.IndexedDB',
+    'fireauth.storage.Storage',
+    'fireauth.util',
+    'goog.Promise',
+    'goog.array'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../src/storage/indexeddb.js',
+  ['fireauth.storage.IndexedDB'],
+  [
+    'fireauth.AuthError',
+    'fireauth.authenum.Error',
+    'fireauth.messagechannel.Receiver',
+    'fireauth.messagechannel.Sender',
+    'fireauth.messagechannel.WorkerClientPostMessager',
+    'fireauth.storage.Storage',
+    'fireauth.util',
+    'goog.Promise',
+    'goog.Timer',
+    'goog.array'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../src/storage/inmemorystorage.js',
+  ['fireauth.storage.InMemoryStorage'],
+  ['goog.Promise'],
+  {}
+);
+goog.addDependency(
+  '../../../../src/storage/localstorage.js',
+  ['fireauth.storage.LocalStorage'],
+  [
+    'fireauth.AuthError',
+    'fireauth.authenum.Error',
+    'fireauth.storage.Storage',
+    'fireauth.util',
+    'goog.Promise',
+    'goog.events'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../src/storage/mockstorage.js',
+  ['fireauth.storage.MockStorage'],
+  [
+    'fireauth.storage.InMemoryStorage',
+    'fireauth.storage.Storage',
+    'fireauth.util',
+    'goog.array'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../src/storage/nullstorage.js',
+  ['fireauth.storage.NullStorage'],
+  ['fireauth.storage.Storage', 'goog.Promise'],
+  {}
+);
+goog.addDependency(
+  '../../../../src/storage/sessionstorage.js',
+  ['fireauth.storage.SessionStorage'],
+  [
+    'fireauth.AuthError',
+    'fireauth.authenum.Error',
+    'fireauth.storage.Storage',
+    'fireauth.util',
+    'goog.Promise'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../src/storage/storage.js',
+  ['fireauth.storage.Storage'],
+  [],
+  {}
+);
+goog.addDependency(
+  '../../../../src/storageautheventmanager.js',
+  [
+    'fireauth.storage.AuthEventManager',
+    'fireauth.storage.AuthEventManager.Keys'
+  ],
+  ['fireauth.AuthEvent', 'fireauth.authStorage'],
+  {}
+);
+goog.addDependency(
+  '../../../../src/storageoauthhandlermanager.js',
+  ['fireauth.storage.OAuthHandlerManager'],
+  [
+    'fireauth.AuthEvent',
+    'fireauth.OAuthHelperState',
+    'fireauth.authStorage',
+    'fireauth.storage.AuthEventManager.Keys'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../src/storagependingredirectmanager.js',
+  ['fireauth.storage.PendingRedirectManager'],
+  ['fireauth.authStorage'],
+  {}
+);
+goog.addDependency(
+  '../../../../src/storageredirectusermanager.js',
+  ['fireauth.storage.RedirectUserManager'],
+  ['fireauth.AuthUser', 'fireauth.authStorage'],
+  {}
+);
+goog.addDependency(
+  '../../../../src/storageusermanager.js',
+  ['fireauth.storage.UserManager'],
+  [
+    'fireauth.AuthUser',
+    'fireauth.authStorage',
+    'fireauth.constants',
+    'goog.Promise'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../src/token.js',
+  [
+    'fireauth.StsTokenManager',
+    'fireauth.StsTokenManager.Response',
+    'fireauth.StsTokenManager.ResponseData'
+  ],
+  [
+    'fireauth.AuthError',
+    'fireauth.IdToken',
+    'fireauth.RpcHandler',
+    'fireauth.authenum.Error',
+    'goog.Promise',
+    'goog.asserts'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../src/universallinksubscriber.js',
+  ['fireauth.UniversalLinkSubscriber'],
+  ['fireauth.util', 'goog.array'],
+  {}
+);
+goog.addDependency(
+  '../../../../src/userevent.js',
+  ['fireauth.UserEvent', 'fireauth.UserEventType'],
+  ['goog.events', 'goog.events.Event'],
+  {}
+);
+goog.addDependency(
+  '../../../../src/utils.js',
+  ['fireauth.util'],
+  [
+    'goog.Promise',
+    'goog.Timer',
+    'goog.Uri',
+    'goog.dom',
+    'goog.events',
+    'goog.events.EventType',
+    'goog.html.SafeUrl',
+    'goog.json',
+    'goog.object',
+    'goog.string',
+    'goog.userAgent',
+    'goog.window'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../test/actioncodeinfo_test.js',
+  ['fireauth.ActionCodeInfoTest'],
+  [
+    'fireauth.ActionCodeInfo',
+    'fireauth.PhoneMultiFactorInfo',
+    'goog.testing.jsunit'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../test/actioncodesettings_test.js',
+  ['fireauth.ActionCodeSettingsTest'],
+  ['fireauth.ActionCodeSettings', 'goog.testing.jsunit'],
+  {}
+);
+goog.addDependency(
+  '../../../../test/actioncodeurl_test.js',
+  ['fireauth.ActionCodeUrlTest'],
+  ['fireauth.ActionCodeInfo', 'fireauth.ActionCodeURL', 'goog.testing.jsunit'],
+  {}
+);
+goog.addDependency(
+  '../../../../test/additionaluserinfo_test.js',
+  ['fireauth.AdditionalUserInfoTest'],
+  [
+    'fireauth.AdditionalUserInfo',
+    'fireauth.FacebookAdditionalUserInfo',
+    'fireauth.FederatedAdditionalUserInfo',
+    'fireauth.GenericAdditionalUserInfo',
+    'fireauth.GithubAdditionalUserInfo',
+    'fireauth.GoogleAdditionalUserInfo',
+    'fireauth.TwitterAdditionalUserInfo',
+    'goog.testing.jsunit'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../test/args_test.js',
+  ['fireauth.argsTest'],
+  [
+    'fireauth.Auth',
+    'fireauth.AuthUser',
+    'fireauth.EmailAuthProvider',
+    'fireauth.GoogleAuthProvider',
+    'fireauth.MultiFactorInfo',
+    'fireauth.PhoneAuthProvider',
+    'fireauth.PhoneMultiFactorGenerator',
+    'fireauth.args',
+    'goog.Promise',
+    'goog.dom',
+    'goog.testing.jsunit'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../test/auth_test.js',
+  ['fireauth.AuthTest'],
+  [
+    'fireauth.ActionCodeInfo',
+    'fireauth.ActionCodeSettings',
+    'fireauth.Auth',
+    'fireauth.AuthCredential',
+    'fireauth.AuthError',
+    'fireauth.AuthErrorWithCredential',
+    'fireauth.AuthEvent',
+    'fireauth.AuthEventManager',
+    'fireauth.AuthSettings',
+    'fireauth.AuthUser',
+    'fireauth.EmailAuthProvider',
+    'fireauth.GoogleAuthProvider',
+    'fireauth.MultiFactorAssertion',
+    'fireauth.MultiFactorInfo',
+    'fireauth.MultiFactorSession',
+    'fireauth.PhoneAuthProvider',
+    'fireauth.RpcHandler',
+    'fireauth.SAMLAuthProvider',
+    'fireauth.StsTokenManager',
+    'fireauth.UserEventType',
+    'fireauth.authStorage',
+    'fireauth.authenum.Error',
+    'fireauth.common.testHelper',
+    'fireauth.constants',
+    'fireauth.deprecation',
+    'fireauth.exports',
+    'fireauth.idp',
+    'fireauth.iframeclient.IfcHandler',
+    'fireauth.object',
+    'fireauth.storage.MockStorage',
+    'fireauth.storage.PendingRedirectManager',
+    'fireauth.storage.RedirectUserManager',
+    'fireauth.storage.UserManager',
+    'fireauth.util',
+    'goog.Promise',
+    'goog.Timer',
+    'goog.Uri',
+    'goog.events',
+    'goog.events.EventType',
+    'goog.testing.AsyncTestCase',
+    'goog.testing.MockClock',
+    'goog.testing.MockControl',
+    'goog.testing.PropertyReplacer',
+    'goog.testing.events',
+    'goog.testing.events.Event',
+    'goog.testing.jsunit',
+    'goog.testing.recordFunction'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../test/authcredential_test.js',
+  ['fireauth.AuthCredentialTest'],
+  [
+    'fireauth.Auth',
+    'fireauth.AuthCredential',
+    'fireauth.AuthError',
+    'fireauth.AuthProvider',
+    'fireauth.EmailAuthCredential',
+    'fireauth.EmailAuthProvider',
+    'fireauth.FacebookAuthProvider',
+    'fireauth.GithubAuthProvider',
+    'fireauth.GoogleAuthProvider',
+    'fireauth.IdToken',
+    'fireauth.MultiFactorSession',
+    'fireauth.OAuthCredential',
+    'fireauth.OAuthProvider',
+    'fireauth.PhoneAuthCredential',
+    'fireauth.PhoneAuthProvider',
+    'fireauth.PhoneMultiFactorInfo',
+    'fireauth.RpcHandler',
+    'fireauth.SAMLAuthCredential',
+    'fireauth.SAMLAuthProvider',
+    'fireauth.TwitterAuthProvider',
+    'fireauth.authenum.Error',
+    'fireauth.common.testHelper',
+    'fireauth.deprecation',
+    'fireauth.idp.ProviderId',
+    'fireauth.idp.SignInMethod',
+    'fireauth.util',
+    'goog.Promise',
+    'goog.testing.MockControl',
+    'goog.testing.PropertyReplacer',
+    'goog.testing.jsunit',
+    'goog.testing.recordFunction'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../test/authevent_test.js',
+  ['fireauth.AuthEventTest'],
+  [
+    'fireauth.AuthError',
+    'fireauth.AuthEvent',
+    'fireauth.authenum.Error',
+    'goog.testing.jsunit'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../test/autheventmanager_test.js',
+  ['fireauth.AuthEventManagerTest'],
+  [
+    'fireauth.AuthError',
+    'fireauth.AuthEvent',
+    'fireauth.AuthEventManager',
+    'fireauth.CordovaHandler',
+    'fireauth.EmailAuthProvider',
+    'fireauth.GoogleAuthProvider',
+    'fireauth.InvalidOriginError',
+    'fireauth.PopupAuthEventProcessor',
+    'fireauth.RedirectAuthEventProcessor',
+    'fireauth.RpcHandler',
+    'fireauth.UniversalLinkSubscriber',
+    'fireauth.authenum.Error',
+    'fireauth.common.testHelper',
+    'fireauth.constants',
+    'fireauth.iframeclient.IfcHandler',
+    'fireauth.storage.MockStorage',
+    'fireauth.storage.OAuthHandlerManager',
+    'fireauth.storage.PendingRedirectManager',
+    'fireauth.util',
+    'goog.Promise',
+    'goog.Uri',
+    'goog.crypt',
+    'goog.crypt.Sha256',
+    'goog.testing.AsyncTestCase',
+    'goog.testing.MockClock',
+    'goog.testing.MockControl',
+    'goog.testing.PropertyReplacer',
+    'goog.testing.jsunit',
+    'goog.testing.mockmatchers',
+    'goog.testing.recordFunction'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../test/authsettings_test.js',
+  ['fireauth.AuthSettingsTest'],
+  ['fireauth.AuthSettings', 'goog.testing.jsunit'],
+  {}
+);
+goog.addDependency(
+  '../../../../test/authstorage_test.js',
+  ['fireauth.authStorageTest'],
+  [
+    'fireauth.AuthError',
+    'fireauth.authStorage',
+    'fireauth.authenum.Error',
+    'fireauth.common.testHelper',
+    'fireauth.exports',
+    'fireauth.storage.IndexedDB',
+    'fireauth.storage.LocalStorage',
+    'fireauth.storage.MockStorage',
+    'fireauth.storage.SessionStorage',
+    'fireauth.util',
+    'goog.Promise',
+    'goog.array',
+    'goog.events',
+    'goog.events.EventType',
+    'goog.testing.MockClock',
+    'goog.testing.PropertyReplacer',
+    'goog.testing.events',
+    'goog.testing.events.Event',
+    'goog.testing.jsunit',
+    'goog.testing.recordFunction'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../test/authuser_test.js',
+  ['fireauth.AuthUserTest'],
+  [
+    'fireauth.ActionCodeSettings',
+    'fireauth.Auth',
+    'fireauth.AuthCredential',
+    'fireauth.AuthError',
+    'fireauth.AuthErrorWithCredential',
+    'fireauth.AuthEvent',
+    'fireauth.AuthEventManager',
+    'fireauth.AuthUser',
+    'fireauth.AuthUserInfo',
+    'fireauth.EmailAuthProvider',
+    'fireauth.GoogleAuthProvider',
+    'fireauth.MultiFactorAssertion',
+    'fireauth.MultiFactorInfo',
+    'fireauth.MultiFactorSession',
+    'fireauth.MultiFactorUser',
+    'fireauth.OAuthSignInHandler',
+    'fireauth.PhoneAuthCredential',
+    'fireauth.PhoneAuthProvider',
+    'fireauth.ProactiveRefresh',
+    'fireauth.RpcHandler',
+    'fireauth.SAMLAuthProvider',
+    'fireauth.StsTokenManager',
+    'fireauth.TokenRefreshTime',
+    'fireauth.UserEventType',
+    'fireauth.UserMetadata',
+    'fireauth.authenum.Error',
+    'fireauth.common.testHelper',
+    'fireauth.constants',
+    'fireauth.deprecation',
+    'fireauth.idp',
+    'fireauth.iframeclient.IfcHandler',
+    'fireauth.object',
+    'fireauth.storage.PendingRedirectManager',
+    'fireauth.storage.RedirectUserManager',
+    'fireauth.util',
+    'goog.Promise',
+    'goog.Uri',
+    'goog.events',
+    'goog.events.EventTarget',
+    'goog.object',
+    'goog.testing.AsyncTestCase',
+    'goog.testing.MockClock',
+    'goog.testing.MockControl',
+    'goog.testing.PropertyReplacer',
+    'goog.testing.jsunit',
+    'goog.testing.recordFunction'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../test/cacherequest_test.js',
+  ['fireauth.CacheRequestTest'],
+  [
+    'fireauth.CacheRequest',
+    'goog.Promise',
+    'goog.testing.MockClock',
+    'goog.testing.TestCase',
+    'goog.testing.jsunit'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../test/confirmationresult_test.js',
+  ['fireauth.ConfirmationResultTest'],
+  [
+    'fireauth.AuthError',
+    'fireauth.ConfirmationResult',
+    'fireauth.PhoneAuthCredential',
+    'fireauth.PhoneAuthProvider',
+    'fireauth.authenum.Error',
+    'fireauth.exports',
+    'goog.Promise',
+    'goog.testing.MockControl',
+    'goog.testing.TestCase',
+    'goog.testing.jsunit'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../test/cordovahandler_test.js',
+  ['fireauth.CordovaHandlerTest'],
+  [
+    'fireauth.AuthError',
+    'fireauth.AuthEvent',
+    'fireauth.CordovaHandler',
+    'fireauth.EmailAuthProvider',
+    'fireauth.GoogleAuthProvider',
+    'fireauth.UniversalLinkSubscriber',
+    'fireauth.authenum.Error',
+    'fireauth.common.testHelper',
+    'fireauth.constants',
+    'fireauth.iframeclient.IfcHandler',
+    'fireauth.storage.AuthEventManager',
+    'fireauth.storage.MockStorage',
+    'fireauth.storage.OAuthHandlerManager',
+    'fireauth.util',
+    'goog.Promise',
+    'goog.Timer',
+    'goog.crypt',
+    'goog.crypt.Sha256',
+    'goog.testing.PropertyReplacer',
+    'goog.testing.TestCase',
+    'goog.testing.jsunit',
+    'goog.testing.recordFunction'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../test/defines_test.js',
+  ['fireauth.constantsTest'],
+  ['fireauth.constants', 'goog.testing.jsunit'],
+  {}
+);
+goog.addDependency(
+  '../../../../test/deprecation_test.js',
+  ['fireauth.deprecationTest'],
+  [
+    'fireauth.deprecation',
+    'fireauth.deprecation.Deprecations',
+    'fireauth.util',
+    'goog.testing.MockControl',
+    'goog.testing.jsunit'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../test/dynamiclink_test.js',
+  ['fireauth.DynamicLinkTest'],
+  [
+    'fireauth.AuthError',
+    'fireauth.DynamicLink',
+    'fireauth.authenum.Error',
+    'fireauth.util',
+    'goog.Uri',
+    'goog.testing.jsunit'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../test/error_test.js',
+  ['fireauth.errorTest'],
+  [
+    'fireauth.AuthError',
+    'fireauth.AuthErrorWithCredential',
+    'fireauth.AuthProvider',
+    'fireauth.FacebookAuthProvider',
+    'fireauth.GoogleAuthProvider',
+    'fireauth.InvalidOriginError',
+    'fireauth.authenum.Error',
+    'goog.object',
+    'goog.string.format',
+    'goog.testing.jsunit'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../test/exports_lib_test.js',
+  ['fireauth.exportlibTest'],
+  ['fireauth.args', 'fireauth.exportlib', 'goog.testing.jsunit'],
+  {}
+);
+goog.addDependency(
+  '../../../../test/idp_test.js',
+  ['fireauth.idpTest'],
+  ['fireauth.idp', 'goog.testing.jsunit'],
+  {}
+);
+goog.addDependency(
+  '../../../../test/idtoken_test.js',
+  ['fireauth.IdTokenTest'],
+  ['fireauth.IdToken', 'goog.testing.PropertyReplacer', 'goog.testing.jsunit'],
+  {}
+);
+goog.addDependency(
+  '../../../../test/idtokenresult_test.js',
+  ['fireauth.IdTokenResultTest'],
+  [
+    'fireauth.AuthError',
+    'fireauth.IdTokenResult',
+    'fireauth.authenum.Error',
+    'fireauth.common.testHelper',
+    'goog.testing.jsunit'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../test/iframeclient/ifchandler_test.js',
+  ['fireauth.iframeclient.IfcHandlerTest'],
+  [
+    'fireauth.AuthError',
+    'fireauth.AuthEvent',
+    'fireauth.EmailAuthProvider',
+    'fireauth.FacebookAuthProvider',
+    'fireauth.FederatedProvider',
+    'fireauth.GoogleAuthProvider',
+    'fireauth.InvalidOriginError',
+    'fireauth.OAuthProvider',
+    'fireauth.RpcHandler',
+    'fireauth.TwitterAuthProvider',
+    'fireauth.authenum.Error',
+    'fireauth.constants',
+    'fireauth.iframeclient.IfcHandler',
+    'fireauth.iframeclient.IframeUrlBuilder',
+    'fireauth.iframeclient.IframeWrapper',
+    'fireauth.iframeclient.OAuthUrlBuilder',
+    'fireauth.util',
+    'goog.Promise',
+    'goog.Uri',
+    'goog.testing.AsyncTestCase',
+    'goog.testing.MockClock',
+    'goog.testing.MockControl',
+    'goog.testing.PropertyReplacer',
+    'goog.testing.jsunit',
+    'goog.testing.mockmatchers',
+    'goog.testing.recordFunction'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../test/iframeclient/iframewrapper_test.js',
+  ['fireauth.iframeclient.IframeWrapperTest'],
+  [
+    'fireauth.iframeclient.IframeWrapper',
+    'fireauth.util',
+    'goog.Promise',
+    'goog.Uri',
+    'goog.html.TrustedResourceUrl',
+    'goog.net.jsloader',
+    'goog.testing.AsyncTestCase',
+    'goog.testing.MockClock',
+    'goog.testing.MockControl',
+    'goog.testing.PropertyReplacer',
+    'goog.testing.jsunit',
+    'goog.testing.mockmatchers'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../test/messagechannel/postmessager_test.js',
+  ['fireauth.messagechannel.PostMessagerTest'],
+  [
+    'fireauth.messagechannel.WindowPostMessager',
+    'fireauth.messagechannel.WorkerClientPostMessager',
+    'goog.testing.MockControl',
+    'goog.testing.jsunit'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../test/messagechannel/receiver_test.js',
+  ['fireauth.messagechannel.ReceiverTest'],
+  [
+    'fireauth.messagechannel.Receiver',
+    'goog.Promise',
+    'goog.events.Event',
+    'goog.events.EventTarget',
+    'goog.testing.MockControl',
+    'goog.testing.jsunit'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../test/messagechannel/sender_test.js',
+  ['fireauth.messagechannel.SenderTest'],
+  [
+    'fireauth.messagechannel.Error',
+    'fireauth.messagechannel.Sender',
+    'fireauth.messagechannel.TimeoutDuration',
+    'fireauth.messagechannel.utils',
+    'goog.Promise',
+    'goog.events.Event',
+    'goog.events.EventTarget',
+    'goog.testing.MockClock',
+    'goog.testing.MockControl',
+    'goog.testing.jsunit'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../test/multifactorassertion_test.js',
+  ['fireauth.MultiFactorAssertionTest'],
+  [
+    'fireauth.AuthCredentialMultiFactorAssertion',
+    'fireauth.AuthError',
+    'fireauth.MultiFactorAuthCredential',
+    'fireauth.MultiFactorSession',
+    'fireauth.PhoneAuthProvider',
+    'fireauth.PhoneMultiFactorAssertion',
+    'fireauth.RpcHandler',
+    'fireauth.authenum.Error',
+    'fireauth.common.testHelper',
+    'goog.Promise',
+    'goog.testing.MockControl',
+    'goog.testing.jsunit'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../test/multifactorerror_test.js',
+  ['fireauth.MultiFactorErrorTest'],
+  [
+    'fireauth.Auth',
+    'fireauth.MultiFactorError',
+    'fireauth.MultiFactorResolver',
+    'fireauth.authenum.Error',
+    'goog.Promise',
+    'goog.object',
+    'goog.testing.jsunit'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../test/multifactorgenerator_test.js',
+  ['fireauth.MultiFactorGeneratorTest'],
+  [
+    'fireauth.AuthError',
+    'fireauth.EmailAuthProvider',
+    'fireauth.PhoneAuthProvider',
+    'fireauth.PhoneMultiFactorAssertion',
+    'fireauth.PhoneMultiFactorGenerator',
+    'fireauth.authenum.Error',
+    'fireauth.common.testHelper',
+    'fireauth.constants',
+    'goog.testing.jsunit'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../test/multifactorinfo_test.js',
+  ['fireauth.MultiFactorInfoTest'],
+  [
+    'fireauth.AuthError',
+    'fireauth.MultiFactorInfo',
+    'fireauth.PhoneMultiFactorInfo',
+    'fireauth.authenum.Error',
+    'fireauth.common.testHelper',
+    'fireauth.constants',
+    'goog.testing.jsunit'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../test/multifactorresolver_test.js',
+  ['fireauth.MultiFactorResolverTest'],
+  [
+    'fireauth.Auth',
+    'fireauth.AuthError',
+    'fireauth.MultiFactorAssertion',
+    'fireauth.MultiFactorInfo',
+    'fireauth.MultiFactorResolver',
+    'fireauth.MultiFactorSession',
+    'fireauth.authenum.Error',
+    'fireauth.common.testHelper',
+    'goog.Promise',
+    'goog.object',
+    'goog.testing.MockControl',
+    'goog.testing.jsunit'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../test/multifactorsession_test.js',
+  ['fireauth.MultiFactorSessionTest'],
+  [
+    'fireauth.AuthError',
+    'fireauth.MultiFactorSession',
+    'fireauth.authenum.Error',
+    'fireauth.common.testHelper',
+    'goog.testing.jsunit'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../test/multifactoruser_test.js',
+  ['fireauth.MultiFactorUserTest'],
+  [
+    'fireauth.AuthError',
+    'fireauth.AuthUser',
+    'fireauth.MultiFactorAssertion',
+    'fireauth.MultiFactorInfo',
+    'fireauth.MultiFactorSession',
+    'fireauth.MultiFactorUser',
+    'fireauth.RpcHandler',
+    'fireauth.UserEventType',
+    'fireauth.authenum.Error',
+    'fireauth.common.testHelper',
+    'fireauth.constants',
+    'goog.Promise',
+    'goog.array',
+    'goog.events',
+    'goog.testing.MockControl',
+    'goog.testing.jsunit'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../test/oauthhelperstate_test.js',
+  ['fireauth.OAuthHelperStateTest'],
+  ['fireauth.AuthEvent', 'fireauth.OAuthHelperState', 'goog.testing.jsunit'],
+  {}
+);
+goog.addDependency(
+  '../../../../test/object_test.js',
+  ['fireauth.objectTest'],
+  [
+    'fireauth.deprecation',
+    'fireauth.object',
+    'goog.testing.PropertyReplacer',
+    'goog.testing.jsunit',
+    'goog.testing.recordFunction',
+    'goog.userAgent'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../test/proactiverefresh_test.js',
+  ['fireauth.ProactiveRefreshTest'],
+  [
+    'fireauth.AuthError',
+    'fireauth.ProactiveRefresh',
+    'fireauth.authenum.Error',
+    'fireauth.util',
+    'goog.Promise',
+    'goog.testing.MockClock',
+    'goog.testing.PropertyReplacer',
+    'goog.testing.jsunit',
+    'goog.testing.recordFunction'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../test/recaptchaverifier/grecaptchamock_test.js',
+  ['fireauth.GRecaptchaMockFactoryTest'],
+  [
+    'fireauth.GRecaptchaMockFactory',
+    'fireauth.RecaptchaMock',
+    'fireauth.util',
+    'goog.dom',
+    'goog.testing.MockClock',
+    'goog.testing.PropertyReplacer',
+    'goog.testing.events',
+    'goog.testing.jsunit',
+    'goog.testing.recordFunction'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../test/recaptchaverifier/mockloader_test.js',
+  ['fireauth.RecaptchaMockLoaderTest'],
+  [
+    'fireauth.GRecaptchaMockFactory',
+    'fireauth.RecaptchaMockLoader',
+    'goog.testing.jsunit'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../test/recaptchaverifier/realloader_test.js',
+  ['fireauth.RecaptchaRealLoaderTest'],
+  [
+    'fireauth.RecaptchaRealLoader',
+    'goog.Promise',
+    'goog.Uri',
+    'goog.dom',
+    'goog.html.TrustedResourceUrl',
+    'goog.testing.MockControl',
+    'goog.testing.PropertyReplacer',
+    'goog.testing.TestCase',
+    'goog.testing.jsunit',
+    'goog.testing.mockmatchers'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../test/recaptchaverifier/recaptchaverifier_test.js',
+  ['fireauth.RecaptchaVerifierTest'],
+  [
+    'fireauth.AuthError',
+    'fireauth.BaseRecaptchaVerifier',
+    'fireauth.GRecaptchaMockFactory',
+    'fireauth.RecaptchaRealLoader',
+    'fireauth.RecaptchaVerifier',
+    'fireauth.RpcHandler',
+    'fireauth.authenum.Error',
+    'fireauth.common.testHelper',
+    'fireauth.constants',
+    'fireauth.util',
+    'goog.Promise',
+    'goog.Uri',
+    'goog.dom',
+    'goog.html.TrustedResourceUrl',
+    'goog.testing.MockClock',
+    'goog.testing.MockControl',
+    'goog.testing.PropertyReplacer',
+    'goog.testing.TestCase',
+    'goog.testing.events',
+    'goog.testing.jsunit',
+    'goog.testing.mockmatchers',
+    'goog.testing.recordFunction'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../test/rpchandler_test.js',
+  ['fireauth.RpcHandlerTest'],
+  [
+    'fireauth.AuthError',
+    'fireauth.AuthErrorWithCredential',
+    'fireauth.AuthProvider',
+    'fireauth.FacebookAuthProvider',
+    'fireauth.GoogleAuthProvider',
+    'fireauth.OAuthCredential',
+    'fireauth.OAuthProvider',
+    'fireauth.RpcHandler',
+    'fireauth.authenum.Error',
+    'fireauth.common.testHelper',
+    'fireauth.constants',
+    'fireauth.util',
+    'goog.Promise',
+    'goog.json',
+    'goog.net.CorsXmlHttpFactory',
+    'goog.net.EventType',
+    'goog.net.FetchXmlHttpFactory',
+    'goog.net.XhrIo',
+    'goog.net.XhrLike',
+    'goog.object',
+    'goog.testing.AsyncTestCase',
+    'goog.testing.MockClock',
+    'goog.testing.MockControl',
+    'goog.testing.PropertyReplacer',
+    'goog.testing.jsunit',
+    'goog.testing.recordFunction'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../test/storage/asyncstorage_test.js',
+  ['fireauth.storage.AsyncStorageTest'],
+  [
+    'fireauth.storage.AsyncStorage',
+    'fireauth.storage.Storage',
+    'fireauth.storage.testHelper',
+    'fireauth.storage.testHelper.FakeAsyncStorage',
+    'goog.testing.PropertyReplacer',
+    'goog.testing.jsunit'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../test/storage/factory_test.js',
+  ['fireauth.storage.FactoryTest'],
+  [
+    'fireauth.storage.AsyncStorage',
+    'fireauth.storage.Factory',
+    'fireauth.storage.Factory.EnvConfig',
+    'fireauth.storage.HybridIndexedDB',
+    'fireauth.storage.InMemoryStorage',
+    'fireauth.storage.IndexedDB',
+    'fireauth.storage.LocalStorage',
+    'fireauth.storage.NullStorage',
+    'fireauth.storage.SessionStorage',
+    'fireauth.storage.Storage',
+    'fireauth.storage.testHelper',
+    'goog.testing.PropertyReplacer',
+    'goog.testing.jsunit',
+    'goog.testing.recordFunction'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../test/storage/hybridindexeddb_test.js',
+  ['fireauth.storage.HybridIndexedDBTest'],
+  [
+    'fireauth.storage.HybridIndexedDB',
+    'fireauth.storage.InMemoryStorage',
+    'fireauth.storage.IndexedDB',
+    'fireauth.storage.MockStorage',
+    'fireauth.storage.Storage',
+    'fireauth.storage.testHelper',
+    'goog.Promise',
+    'goog.events.EventType',
+    'goog.testing.PropertyReplacer',
+    'goog.testing.events',
+    'goog.testing.events.Event',
+    'goog.testing.jsunit',
+    'goog.testing.recordFunction'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../test/storage/indexeddb_test.js',
+  ['fireauth.storage.IndexedDBTest'],
+  [
+    'fireauth.AuthError',
+    'fireauth.authenum.Error',
+    'fireauth.messagechannel.Receiver',
+    'fireauth.messagechannel.Sender',
+    'fireauth.storage.IndexedDB',
+    'fireauth.storage.Storage',
+    'goog.Promise',
+    'goog.testing.MockClock',
+    'goog.testing.MockControl',
+    'goog.testing.PropertyReplacer',
+    'goog.testing.jsunit',
+    'goog.testing.recordFunction'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../test/storage/inmemorystorage_test.js',
+  ['fireauth.storage.InMemoryStorageTest'],
+  [
+    'fireauth.storage.InMemoryStorage',
+    'fireauth.storage.Storage',
+    'fireauth.storage.testHelper',
+    'goog.testing.jsunit'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../test/storage/localstorage_test.js',
+  ['fireauth.storage.LocalStorageTest'],
+  [
+    'fireauth.AuthError',
+    'fireauth.authenum.Error',
+    'fireauth.storage.LocalStorage',
+    'fireauth.storage.Storage',
+    'fireauth.storage.testHelper',
+    'fireauth.util',
+    'goog.events.EventType',
+    'goog.testing.PropertyReplacer',
+    'goog.testing.events',
+    'goog.testing.events.Event',
+    'goog.testing.jsunit',
+    'goog.testing.recordFunction'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../test/storage/mockstorage_test.js',
+  ['fireauth.storage.MockStorageTest'],
+  [
+    'fireauth.storage.MockStorage',
+    'fireauth.storage.Storage',
+    'fireauth.storage.testHelper',
+    'goog.events.EventType',
+    'goog.testing.events',
+    'goog.testing.events.Event',
+    'goog.testing.jsunit',
+    'goog.testing.recordFunction'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../test/storage/nullstorage_test.js',
+  ['fireauth.storage.NullStorageTest'],
+  [
+    'fireauth.storage.NullStorage',
+    'fireauth.storage.Storage',
+    'goog.Promise',
+    'goog.testing.jsunit'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../test/storage/sessionstorage_test.js',
+  ['fireauth.storage.SessionStorageTest'],
+  [
+    'fireauth.AuthError',
+    'fireauth.authenum.Error',
+    'fireauth.storage.SessionStorage',
+    'fireauth.storage.Storage',
+    'fireauth.storage.testHelper',
+    'fireauth.util',
+    'goog.testing.PropertyReplacer',
+    'goog.testing.jsunit'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../test/storage/testhelper.js',
+  [
+    'fireauth.storage.testHelper',
+    'fireauth.storage.testHelper.FakeAsyncStorage'
+  ],
+  ['goog.Promise'],
+  {}
+);
+goog.addDependency(
+  '../../../../test/storageautheventmanager_test.js',
+  ['fireauth.storage.AuthEventManagerTest'],
+  [
+    'fireauth.AuthEvent',
+    'fireauth.authStorage',
+    'fireauth.common.testHelper',
+    'fireauth.storage.AuthEventManager',
+    'fireauth.storage.MockStorage',
+    'fireauth.util',
+    'goog.Promise',
+    'goog.events',
+    'goog.events.EventType',
+    'goog.testing.PropertyReplacer',
+    'goog.testing.events',
+    'goog.testing.events.Event',
+    'goog.testing.jsunit',
+    'goog.testing.recordFunction'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../test/storageoauthhandlermanager_test.js',
+  ['fireauth.storage.OAuthHandlerManagerTest'],
+  [
+    'fireauth.AuthEvent',
+    'fireauth.OAuthHelperState',
+    'fireauth.authStorage',
+    'fireauth.common.testHelper',
+    'fireauth.storage.MockStorage',
+    'fireauth.storage.OAuthHandlerManager',
+    'fireauth.util',
+    'goog.Promise',
+    'goog.testing.PropertyReplacer',
+    'goog.testing.jsunit'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../test/storagependingredirectmanager_test.js',
+  ['fireauth.storage.PendingRedirectManagerTest'],
+  [
+    'fireauth.authStorage',
+    'fireauth.common.testHelper',
+    'fireauth.storage.MockStorage',
+    'fireauth.storage.PendingRedirectManager',
+    'goog.Promise',
+    'goog.testing.PropertyReplacer',
+    'goog.testing.jsunit'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../test/storageredirectusermanager_test.js',
+  ['fireauth.storage.RedirectUserManagerTest'],
+  [
+    'fireauth.AuthUser',
+    'fireauth.authStorage',
+    'fireauth.common.testHelper',
+    'fireauth.constants',
+    'fireauth.storage.MockStorage',
+    'fireauth.storage.RedirectUserManager',
+    'goog.Promise',
+    'goog.testing.MockClock',
+    'goog.testing.PropertyReplacer',
+    'goog.testing.jsunit'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../test/storageusermanager_test.js',
+  ['fireauth.storage.UserManagerTest'],
+  [
+    'fireauth.AuthUser',
+    'fireauth.authStorage',
+    'fireauth.common.testHelper',
+    'fireauth.constants',
+    'fireauth.storage.MockStorage',
+    'fireauth.storage.UserManager',
+    'fireauth.util',
+    'goog.Promise',
+    'goog.events',
+    'goog.events.EventType',
+    'goog.testing.PropertyReplacer',
+    'goog.testing.events',
+    'goog.testing.events.Event',
+    'goog.testing.jsunit',
+    'goog.testing.recordFunction'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../test/testhelper.js',
+  ['fireauth.common.testHelper'],
+  [
+    'fireauth.storage.Factory',
+    'fireauth.util',
+    'goog.Promise',
+    'goog.crypt.base64',
+    'goog.object'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../test/token_test.js',
+  ['fireauth.StsTokenManagerTest'],
+  [
+    'fireauth.AuthError',
+    'fireauth.RpcHandler',
+    'fireauth.StsTokenManager',
+    'fireauth.authenum.Error',
+    'fireauth.common.testHelper',
+    'goog.Promise',
+    'goog.testing.AsyncTestCase',
+    'goog.testing.PropertyReplacer',
+    'goog.testing.jsunit'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../test/universallinksubscriber_test.js',
+  ['fireauth.UniversalLinkSubscriberTest'],
+  [
+    'fireauth.UniversalLinkSubscriber',
+    'goog.testing.jsunit',
+    'goog.testing.recordFunction'
+  ],
+  {}
+);
+goog.addDependency(
+  '../../../../test/userevent_test.js',
+  ['fireauth.UserEventTest'],
+  ['fireauth.UserEvent', 'fireauth.UserEventType', 'goog.testing.jsunit'],
+  {}
+);
+goog.addDependency(
+  '../../../../test/utils_test.js',
+  ['fireauth.utilTest'],
+  [
+    'fireauth.util',
+    'goog.Timer',
+    'goog.dom',
+    'goog.testing.MockControl',
+    'goog.testing.PropertyReplacer',
+    'goog.testing.TestCase',
+    'goog.testing.jsunit',
+    'goog.userAgent'
+  ],
+  {}
+);
